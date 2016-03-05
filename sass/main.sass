@@ -3,20 +3,516 @@
 @import ../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss
 @import ../bower_components/font-awesome/scss/font-awesome.scss
 
-$green-bg: #9FC739
-
 body
-    padding: 80px 0 0
-    background: #2D2D2D
+  padding: 80px 0 0
+  background: #2D2D2D
 
 .container
-    width: 1170px !important
+  width: 1170px !important
 
 .slide
-    height: 600px
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)
-    border-radius: 3px
-    margin-bottom: 80px
-    overflow: hidden
+  background: #fff
+  height: 600px
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)
+  border-radius: 3px
+  margin-bottom: 80px
+  overflow: hidden
+  position: relative
+  .content
+    position: absolute
+    top: 0
+    z-index: 2
+    & > *
+      position: absolute
+  .img-background
+    position: absolute
+    top: 0
+    z-index: 1
 
-@import index
+.one .content
+  img
+    top: 65px
+    left: 350px
+    width: 470px
+  h1
+    color: #fff
+    font-weight: 400
+    top: 220px
+    font-size: 4em
+    left: 410px
+  .paragraph-for
+    font-size: 3em
+    top: 320px
+    left: 555px
+    font-weight: 300
+  h2
+    color: #aaa
+    top: 400px
+    width: 1140px
+    left: 9px
+    text-align: center
+    font-size: 4em
+
+.two .content
+  h1
+    color: #fff
+    width: 1140px
+    text-align: center
+    top: 40px
+  .menulog
+    top: 120px
+    left: 50px
+  .justeat
+    top: 160px
+    left: 830px
+
+.three .content
+  .menulog
+    top: 20px
+    left: 140px
+  .justeat
+    top: 10px
+    left: 650px
+  p
+    color: #fff
+    border-left: solid 5px #fff
+    padding-left: 20px
+    font-size: 1.2em
+    &.one
+      top: 120px
+      left: 200px
+      width: 250px
+    &.two
+      top: 210px
+      left: 120px
+      width: 280px
+    &.three
+      top: 85px
+      left: 575px
+      width: 470px
+    &.four
+      top: 170px
+      left: 820px
+      width: 200px
+    &.five
+      top: 280px
+      left: 640px
+      width: 160px
+    &.six
+      top: 460px
+      left: 720px
+      width: 250px
+
+.four .content
+  h1
+    width: 1140px
+    text-align: center
+    color: #fff
+    top: 50px
+
+.five .content
+  .menulog
+    top: 80px
+    left: 50px
+  h1
+    color: #fff
+    top: 250px
+    left: 50px
+    font-size: 4em
+
+.six .content
+  .menulog
+    top: 50px
+    left: 100px
+  h1,
+  h2
+    color: #fff
+    font-size: 4em
+    width: 500px
+  h1
+    top: 177px
+    left: 100px
+  h2
+    top: 282px
+    left: 250px
+
+.seven .content
+  h1
+    font-size: 4em
+    top: 15px
+    width: 1140px
+    text-align: center
+    color: #4E4D4E
+    font-weight: 400
+
+.eight .content
+  h1
+    font-size: 4em
+    top: 15px
+    width: 1140px
+    text-align: center
+    color: #4E4D4E
+    font-weight: 400
+  h2
+    font-size: 3em
+    top: 130px
+    width: 1140px
+    text-align: center
+    color: #90B228
+    font-weight: 700
+  .one
+    width: 100px
+    top: 230px
+    left: 85px
+    line-height: 1.8em
+    font-weight: 500
+    strong
+      font-size: 1.8em
+  .two
+    width: 100px
+    top: 253px
+    left: 220px
+    line-height: 1.8em
+    font-weight: 500
+  .three
+    width: 100px
+    top: 253px
+    left: 360px
+    line-height: 1.8em
+    font-weight: 500
+  .four
+    width: 100px
+    top: 253px
+    left: 520px
+    line-height: 1.8em
+    font-weight: 500
+  .five
+    width: 100px
+    top: 230px
+    left: 710px
+    line-height: 1.8em
+    font-weight: 500
+    strong
+      font-size: 1.8em
+  .six
+    width: 100px
+    top: 253px
+    left: 905px
+    line-height: 1.8em
+    font-weight: 500
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven,
+  .twelve
+    width: 300px
+    h3
+      font-size: 1.8em
+      position: static
+      margin-bottom: 5px
+    a
+      position: static
+  .seven
+    top: 490px
+    left: 55px
+    h3
+      color: #990000
+  .eight
+    top: 365px
+    left: 155px
+    h3
+      color: #BF9000
+  .nine
+    top: 480px
+    left: 330px
+    h3
+      color: #0B5394
+  .ten
+    top: 365px
+    left: 440px
+    h3
+      color: #38761D
+  .eleven
+    top: 370px
+    left: 690px
+    h3
+      color: #EA9999
+  .twelve
+    top: 480px
+    left: 850px
+    h3
+      color: #B4A7D6
+
+.nine .content
+  h1
+    font-size: 4em
+    top: 15px
+    width: 1140px
+    text-align: center
+    color: #4E4D4E
+    font-weight: 400
+  ul
+    padding: 0
+    list-style-type: none
+    li
+      position: static
+      color: #fff
+      font-size: 1.5em
+      margin-bottom: 59px
+  .one
+    text-align: right
+    top: 260px
+    left: 440px
+  .two
+    text-align: left
+    top: 260px
+    left: 630px
+
+.ten .content
+  .one
+    color: #fff
+    top: 105px
+    left: 360px
+    font-size: 1.3em
+    width: 160px
+  .two
+    color: #fff
+    top: 500px
+    left: 25px
+    text-align: right
+    font-size: 1.3em
+    width: 150px
+    strong
+      font-size: 1.8em
+      display: block
+  .three
+    top: 50px
+    left: 855px
+    font-size: 1.5em
+    text-align: center
+    width: 200px
+    strong
+      display: block
+      color: #fff
+      font-size: 1.5em
+      font-weight: 400
+    span
+      color: #fff
+  .four
+    top: 400px
+    left: 590px
+    font-size: 1.3em
+    width: 150px
+    text-align: center
+  .five
+    top: 440px
+    left: 950px
+    color: #fff
+    font-size: 1.5em
+  .six
+    top: 536px
+    left: 753px
+    padding: 0
+    width: 500px
+    list-style-type: none
+    li
+      color: #AD770B
+      display: inline-block
+      font-size: 1.5em
+      margin: 0 20px
+  h1
+    color: #F9F7C0
+    font-weight: 400
+    font-size: 4em
+    left: 50px
+
+.eleven .content
+  .menulog
+    top: 50px
+    left: 50px
+  h1
+    color: #fff
+    top: 130px
+    font-size: 4em
+    left: 50px
+    width: 600px
+
+.twelve .content
+  h1
+    color: #fff
+    width: 1100px
+    font-size: 6em
+    text-shadow: 2px 2px #000
+    margin-top: 10px
+    text-align: right
+  .one
+    color: #494949
+    font-size: 2em
+    top: 123px
+    left: 163px
+    width: 200px
+  .two
+    color: #494949
+    font-size: 2.3em
+    top: 156px
+    left: 437px
+    width: 200px
+  .three
+    color: #494949
+    font-size: 1.8em
+    top: 315px
+    left: 222px
+    width: 200px
+  .four
+    color: #494949
+    font-size: 1.5em
+    top: 276px
+    left: 466px
+    width: 200px
+  .five
+    color: #212121
+    top: 260px
+    left: 790px
+    font-size: 2.8em
+    width: 300px
+    line-height: 0.9
+
+.fourteen .content
+  h1
+    color: #fff
+    width: 900px
+    font-size: 7em
+    font-weight: 400
+    left: 70px
+  p
+    color: #754E00
+    font-size: 4em
+    font-weight: 400
+    text-align: center
+    width: 540px
+    top: 293px
+    line-height: 1.5em
+    strong
+      font-size: 2em
+      display: block
+
+.fifteen .content,
+.sixteen .content,
+.seventeen .content,
+.nineteen .content
+  h1
+    color: #fff
+    width: 1140px
+    text-align: center
+    font-size: 4em
+    font-weight: 400
+    top: 30px
+  table
+    width: 650px
+    font-size: 2em
+    top: 200px
+    left: 240px
+    border: solid 8px #FCEE21
+    td
+      padding: 10px 20px
+    tr
+      &:nth-child(odd)
+        background: rgba(255,255,255,0.6)
+        td.green
+          background: rgba(179,226,35,0.6)
+        td.blue
+          background: rgba(41,171,226,0.6)
+        td.yellow
+          background: rgba(255,255,0,0.6)
+      &:nth-child(even)
+        background: rgba(255,255,255,0.8)
+        td.green
+          background: rgba(179,226,35,0.2)
+        td.blue
+          background: rgba(41,171,226,0.2)
+        td.yellow
+          background: rgba(255,255,0,0.2)
+  img
+    top: 510px
+    left: 25px
+    width: 200px
+
+.sixteen .content
+  table
+    top: 160px
+
+.seventeen .content
+  table
+    font-size: 1.6em
+    width: 850px
+    top: 140px
+    left: 140px
+
+.eighteen .content
+  h1
+    width: 1140px
+    font-size: 3em
+    color: #07665F
+    text-align: center
+    font-weight: 400
+  p
+    color: #fff
+    width: 200px
+    strong
+      font-size: 3em
+      font-weight: 400
+      display: block
+  .one
+    top: 80px
+    left: 60px
+  .two
+    top: 425px
+    left: 125px
+  .three
+    top: 110px
+    left: 380px
+  .four
+    top: 105px
+    left: 660px
+  .five
+    top: 425px
+    left: 635px
+  .six
+    top: 105px
+    left: 890px
+
+.nineteen .content
+  table
+    width: 800px
+    top: 150px
+    left: 170px
+
+.twenty .content
+  h1
+    color: #fff
+    font-size: 4em
+    top: 130px
+    left: 50px
+    font-weight: 400
+  img
+    top: 50px
+    left: 50px
+
+.twentyone .content,
+.twentytwo .content,
+.twentythree .content,
+.twentyfour .content
+  h1
+    color: #fff
+    font-weight: 400
+    left: 50px
+    margin: 0
+    top: 5px
+    font-size: 4em
+    width: 900px
+
+.twentyfive .content
+  img
+    top: 250px
+    left: 430px
