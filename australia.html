@@ -162,7 +162,16 @@
     <div class="slide eleven">
       <div class="content">
         <img src="https://eatcdn.s3.amazonaws.com/Salesforce/Images/iPresentation/NZ/menulog.png" class="menulog" />
-        <h1>Regional Stats</h1>
+        <h1 style="top:170px">Regional Stats</h1>
+        <p style="color: #fff;left: 50px;font-size: 1.5em;width: 600px;top: 270px;">Looking at {!Lead.BDM_Allocation__r.Name}, {!Lead.ABS_POA__r.name}</p>
+        <p style="width:200px;color: #fff;left: 50px;width: 600px;font-size: 1.5em;top: 310px;">
+           There are a total <strong>{! FLOOR(Lead.ABS_POA__r.Total_Restaurants__c)}</strong> restaurants in {!Lead.ABS_POA__r.name}.
+        </p>
+        <p style="color: #fff;left: 50px;font-size: 1.5em;width: 600px;top: 350px;">
+            On average they each received <strong>{!Floor(Lead.ABS_POA__r.Average_Orders_per_TR__c)}</strong> orders <br />
+            in the last <strong>28 days</strong> taking in approx ${!Floor(Lead.ABS_POA__r.Average_Orders_per_TR__c * 39)} <br />
+            in additional revenue.
+        </p>
       </div>
       <img src="https://eatcdn.s3.amazonaws.com/Salesforce/Images/iPresentation/NZ/11.png" class="img-background" />
     </div>
